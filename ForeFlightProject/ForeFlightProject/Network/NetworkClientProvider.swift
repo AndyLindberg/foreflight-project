@@ -16,7 +16,7 @@ final class NetworkManager {
     /// object when successful or a failure otherwise
     class func request<T: Decodable>(urlString: String, completion: @escaping (Result<T, Error>) -> Void) {
         guard let airportURL = URL(string: urlString) else {
-            print("URL creation error")
+            Log.error("URL Creation Error")
             return
         }
 
@@ -28,7 +28,7 @@ final class NetworkManager {
         let dataTask = session.dataTask(with: request) { data, response, error in
             if let error = error {
                 completion(.failure(error))
-                print("Unknown error", error)
+                Log.error("Unknown error for data task")
                 return
             }
             
@@ -37,7 +37,7 @@ final class NetworkManager {
             }
             
             if let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode != 200 {
-                print ("httpResponse.statusCode: \(httpResponse.statusCode)")
+                Log.error("httpResponse.statusCode != 200")
                 let error = NSError(domain: "qa.foreflight", code: 404, userInfo: [NSLocalizedDescriptionKey: "Failed"])
                 completion(.failure(error))
                 return

@@ -70,11 +70,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let airport = airportsArray?[indexPath.row] {
-            print ("Selected airport: \(airport)")
-
             getData(for: airport)
-
-
             tableView.deselectRow(at: indexPath, animated: true)
         }
     }
@@ -115,7 +111,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
                     weakSelf.present(alert, animated: true) {
                     }
                 }
-                print(error)
+                Log.error("getData Error")
             }
         }
     }
@@ -134,7 +130,7 @@ extension ViewController: UITextFieldDelegate {
         textField.resignFirstResponder()
         if let airportCode = textField.text {
             if (airportsArray?.contains(airportCode) ?? false) {
-                print("Airport already added")
+                Log.warning("Airport already added")
                 let cancelAction = UIAlertAction(title: "Try Again",
                                      style: .cancel) { (action) in
                     textField.becomeFirstResponder()
@@ -149,7 +145,6 @@ extension ViewController: UITextFieldDelegate {
                 }
                 
             }else {
-                print(airportCode)
                 getData(for: airportCode)
                 if let cellToSelect = airportsArray?.firstIndex(where: { $0 == airportCode }) {
                     let indexPath = IndexPath(row: cellToSelect, section: 0)

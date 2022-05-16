@@ -91,7 +91,7 @@ class AirportDetailsViewController: UIViewController, UIScrollViewDelegate {
                     }
                     // The user may not know that things are being updated on a timer, I don't believe we would want to present an error via UIAlert if the API call fails for some reason.
                 case .failure(let error):
-                    print(error)
+                    Log.error("Timer refresh failure")
                 }
             }
         }
