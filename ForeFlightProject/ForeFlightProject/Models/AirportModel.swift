@@ -60,9 +60,7 @@ struct Remarks: Decodable {
     let precipitationDiscriminator, humanObserver: Bool?
     let seaLevelPressure, temperature, dewpoint: Double?
     let visibility: WeatherBeginEndsClass?
-    //let sensoryStatus, lightning: [Any?]
     let weatherBeginEnds: WeatherBeginEndsClass?
-    //let clouds, obscuringLayers: [Any?]
 }
 
 // MARK: - WeatherBeginEndsClass
@@ -145,7 +143,6 @@ struct AirportCondition: Decodable {
     let visibility: SecondaryAirportVisibility?
     let wind: Wind?
     let period: Period?
-    //let turbulence, icing: [Any?]
 }
 
 // MARK: - SecondaryAirportVisibility
