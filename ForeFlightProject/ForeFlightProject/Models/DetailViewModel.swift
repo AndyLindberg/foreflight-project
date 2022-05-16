@@ -19,7 +19,7 @@ struct DetailViewModel {
         let generalInformationSection: SectionModel = .init(title: "General Information", cells: [textCell, identCell, dateCell])
         
         let latCell: CellModel = .text(title: "Lat", value: String(model.lat ?? 9999))
-        let lonCell: CellModel = .text(title: "Lat", value: String(model.lon ?? 9999))
+        let lonCell: CellModel = .text(title: "Lon", value: String(model.lon ?? 9999))
         let coordinateSection: SectionModel = .init(title: "Coordinates", cells: [latCell, lonCell])
 
         

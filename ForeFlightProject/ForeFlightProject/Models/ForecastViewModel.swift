@@ -22,7 +22,7 @@ struct ForecastViewModel {
         let generalInformationSection: ForecastSectionModel = .init(title: "General Information", cells: [textCell, identCell, dateCell, dateStart, dateEnd, elevationCell])
         
         let latCell: CellModel = .text(title: "Lat", value: String(model.lat ?? 9999))
-        let lonCell: CellModel = .text(title: "Lat", value: String(model.lon ?? 9999))
+        let lonCell: CellModel = .text(title: "Lon", value: String(model.lon ?? 9999))
         let coordinateSection: ForecastSectionModel = .init(title: "Coordinates", cells: [latCell, lonCell])
 
         var conditionSections: [ForecastSectionModel] = []
