@@ -28,6 +28,8 @@ elements in the view update to represent
 - To make the AirportModel I wanted to try a [new tool](https://app.quicktype.io/) I found. I don't think I will use it again as it had trouble creating the structs properly. It might work better for a more simple json response
 - Given more time I would like to add tests for bad input, bad json response, etc.
 - There are no pods, please run the xcode project like normal
+- You can find the project on my [GitHub Page](https://github.com/AndyLindberg/foreflight-project)
+- [Clone URL](https://github.com/AndyLindberg/foreflight-project.git)
 
 
 
