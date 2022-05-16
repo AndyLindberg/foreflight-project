@@ -8,7 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet var tableView: UITableView!
     @IBOutlet var textField: UITextField!
     
@@ -46,7 +46,6 @@ class ViewController: UIViewController {
     
 }
 
-
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -64,7 +63,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             cell.contentView.backgroundColor = #colorLiteral(red: 0.07843137255, green: 0.07843137255, blue: 0.07843137255, alpha: 1)
             cell.airportIdentifier.textColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         }
-
+        
         return cell
     }
     
@@ -75,6 +74,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         }
     }
     
+    //TODO: Ideally our VCs would not be calling our NetworkManager directly, should be handled on a service layer object that would handle that operation on their behalf.
     func getData(for airport: String) {
         NetworkManager.request(urlString: StringConstants.airportURL.replacingOccurrences(of: "{airportCode}", with: airport)) { [weak self]
             (result: Result<AirportModel, Error>) in
@@ -98,16 +98,16 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
                 }
             case .failure(let error):
                 DispatchQueue.main.async {
-                    let cancelAction = UIAlertAction(title: "Try Again",
-                                         style: .cancel) { (action) in
+                    let cancelAction = UIAlertAction(title: StringConstants.cancelAction,
+                                                     style: .cancel) { (action) in
                         weakSelf.textField.becomeFirstResponder()
                     }
                     
-                    let alert = UIAlertController(title: "Invalid Airport Identifier",
-                          message: "Check the identifier and try again",
-                          preferredStyle: .alert)
+                    let alert = UIAlertController(title: StringConstants.invalidAirportId,
+                                                  message: StringConstants.invalidAirportIdMessage,
+                                                  preferredStyle: .alert)
                     alert.addAction(cancelAction)
-                         
+                    
                     weakSelf.present(alert, animated: true) {
                     }
                 }
@@ -131,16 +131,16 @@ extension ViewController: UITextFieldDelegate {
         if let airportCode = textField.text {
             if (airportsArray?.contains(airportCode) ?? false) {
                 Log.warning("Airport already added")
-                let cancelAction = UIAlertAction(title: "Try Again",
-                                     style: .cancel) { (action) in
+                let cancelAction = UIAlertAction(title: StringConstants.cancelAction,
+                                                 style: .cancel) { (action) in
                     textField.becomeFirstResponder()
                 }
                 
-                let alert = UIAlertController(title: "Airport Already Added",
-                      message: "Check the identifier and try again",
-                      preferredStyle: .alert)
+                let alert = UIAlertController(title: StringConstants.airportAlreadyAdded,
+                                              message: StringConstants.checkIdMessage,
+                                              preferredStyle: .alert)
                 alert.addAction(cancelAction)
-                     
+                
                 self.present(alert, animated: true) {
                 }
                 
