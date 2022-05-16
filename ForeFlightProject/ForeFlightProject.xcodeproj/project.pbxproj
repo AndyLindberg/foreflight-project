@@ -12,10 +12,21 @@
 		A10EF91D282D9B1000764BB6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10EF91C282D9B1000764BB6 /* ViewController.swift */; };
 		A10EF920282D9B1000764BB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A10EF91E282D9B1000764BB6 /* Main.storyboard */; };
 		A10EF922282D9B1300764BB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A10EF921282D9B1300764BB6 /* Assets.xcassets */; };
-		A10EF925282D9B1300764BB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A10EF923282D9B1300764BB6 /* LaunchScreen.storyboard */; };
 		A10EF930282D9B1300764BB6 /* ForeFlightProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10EF92F282D9B1300764BB6 /* ForeFlightProjectTests.swift */; };
 		A10EF93A282D9B1300764BB6 /* ForeFlightProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10EF939282D9B1300764BB6 /* ForeFlightProjectUITests.swift */; };
 		A10EF93C282D9B1300764BB6 /* ForeFlightProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10EF93B282D9B1300764BB6 /* ForeFlightProjectUITestsLaunchTests.swift */; };
+		A1A19797282EA7EC00ED36D0 /* AirportModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A19796282EA7EC00ED36D0 /* AirportModel.swift */; };
+		A1A19799282EAAE600ED36D0 /* AirportTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A19798282EAAE600ED36D0 /* AirportTableViewCell.swift */; };
+		A1A1979B282EAB0100ED36D0 /* AirportTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1A1979A282EAB0100ED36D0 /* AirportTableViewCell.xib */; };
+		A1A197A1282F2C0400ED36D0 /* AirportDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A197A0282F2C0400ED36D0 /* AirportDetailsViewController.swift */; };
+		A1A197A3282F2C1700ED36D0 /* AirportDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1A197A2282F2C1700ED36D0 /* AirportDetailsViewController.xib */; };
+		A1A197A5282FF7A800ED36D0 /* NetworkClientProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A197A4282FF7A800ED36D0 /* NetworkClientProvider.swift */; };
+		A1A197A7282FF97800ED36D0 /* StringConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A197A6282FF97800ED36D0 /* StringConstants.swift */; };
+		A1A197AB2831722A00ED36D0 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A197AA2831722A00ED36D0 /* UIColor.swift */; };
+		A1A197AD2831796700ED36D0 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A197AC2831796700ED36D0 /* DetailViewModel.swift */; };
+		A1A197AF28318C9600ED36D0 /* ForecastViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A197AE28318C9600ED36D0 /* ForecastViewModel.swift */; };
+		A1A197BF2831D40F00ED36D0 /* runway.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A1A197BE2831D40F00ED36D0 /* runway.jpg */; };
+		A1A197C12831D45100ED36D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1A197C02831D45100ED36D0 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,13 +53,24 @@
 		A10EF91C282D9B1000764BB6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A10EF91F282D9B1000764BB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A10EF921282D9B1300764BB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A10EF924282D9B1300764BB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A10EF926282D9B1300764BB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A10EF92B282D9B1300764BB6 /* ForeFlightProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ForeFlightProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A10EF92F282D9B1300764BB6 /* ForeFlightProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForeFlightProjectTests.swift; sourceTree = "<group>"; };
 		A10EF935282D9B1300764BB6 /* ForeFlightProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ForeFlightProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A10EF939282D9B1300764BB6 /* ForeFlightProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForeFlightProjectUITests.swift; sourceTree = "<group>"; };
 		A10EF93B282D9B1300764BB6 /* ForeFlightProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForeFlightProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A1A19796282EA7EC00ED36D0 /* AirportModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportModel.swift; sourceTree = "<group>"; };
+		A1A19798282EAAE600ED36D0 /* AirportTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportTableViewCell.swift; sourceTree = "<group>"; };
+		A1A1979A282EAB0100ED36D0 /* AirportTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AirportTableViewCell.xib; sourceTree = "<group>"; };
+		A1A197A0282F2C0400ED36D0 /* AirportDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportDetailsViewController.swift; sourceTree = "<group>"; };
+		A1A197A2282F2C1700ED36D0 /* AirportDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AirportDetailsViewController.xib; sourceTree = "<group>"; };
+		A1A197A4282FF7A800ED36D0 /* NetworkClientProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientProvider.swift; sourceTree = "<group>"; };
+		A1A197A6282FF97800ED36D0 /* StringConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringConstants.swift; sourceTree = "<group>"; };
+		A1A197AA2831722A00ED36D0 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		A1A197AC2831796700ED36D0 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		A1A197AE28318C9600ED36D0 /* ForecastViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastViewModel.swift; sourceTree = "<group>"; };
+		A1A197BE2831D40F00ED36D0 /* runway.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = runway.jpg; sourceTree = "<group>"; };
+		A1A197C02831D45100ED36D0 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +121,17 @@
 		A10EF917282D9B1000764BB6 /* ForeFlightProject */ = {
 			isa = PBXGroup;
 			children = (
+				A1A197BB2831D32F00ED36D0 /* Images */,
+				A1A197B62831A06100ED36D0 /* Network */,
+				A1A197B52831A04500ED36D0 /* View Controllers */,
+				A1A197B42831A03100ED36D0 /* Utils */,
+				A1A197B32831A01600ED36D0 /* Table View */,
+				A1A197B228319FF400ED36D0 /* Models */,
 				A10EF918282D9B1000764BB6 /* AppDelegate.swift */,
 				A10EF91A282D9B1000764BB6 /* SceneDelegate.swift */,
-				A10EF91C282D9B1000764BB6 /* ViewController.swift */,
 				A10EF91E282D9B1000764BB6 /* Main.storyboard */,
-				A10EF921282D9B1300764BB6 /* Assets.xcassets */,
-				A10EF923282D9B1300764BB6 /* LaunchScreen.storyboard */,
 				A10EF926282D9B1300764BB6 /* Info.plist */,
+				A1A197C02831D45100ED36D0 /* LaunchScreen.storyboard */,
 			);
 			path = ForeFlightProject;
 			sourceTree = "<group>";
@@ -125,6 +151,61 @@
 				A10EF93B282D9B1300764BB6 /* ForeFlightProjectUITestsLaunchTests.swift */,
 			);
 			path = ForeFlightProjectUITests;
+			sourceTree = "<group>";
+		};
+		A1A197B228319FF400ED36D0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A1A19796282EA7EC00ED36D0 /* AirportModel.swift */,
+				A1A197AC2831796700ED36D0 /* DetailViewModel.swift */,
+				A1A197AE28318C9600ED36D0 /* ForecastViewModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A1A197B32831A01600ED36D0 /* Table View */ = {
+			isa = PBXGroup;
+			children = (
+				A1A19798282EAAE600ED36D0 /* AirportTableViewCell.swift */,
+				A1A1979A282EAB0100ED36D0 /* AirportTableViewCell.xib */,
+			);
+			path = "Table View";
+			sourceTree = "<group>";
+		};
+		A1A197B42831A03100ED36D0 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A1A197A6282FF97800ED36D0 /* StringConstants.swift */,
+				A1A197AA2831722A00ED36D0 /* UIColor.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		A1A197B52831A04500ED36D0 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A10EF91C282D9B1000764BB6 /* ViewController.swift */,
+				A1A197A0282F2C0400ED36D0 /* AirportDetailsViewController.swift */,
+				A1A197A2282F2C1700ED36D0 /* AirportDetailsViewController.xib */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		A1A197B62831A06100ED36D0 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A1A197A4282FF7A800ED36D0 /* NetworkClientProvider.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		A1A197BB2831D32F00ED36D0 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				A1A197BE2831D40F00ED36D0 /* runway.jpg */,
+				A10EF921282D9B1300764BB6 /* Assets.xcassets */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,9 +312,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A10EF925282D9B1300764BB6 /* LaunchScreen.storyboard in Resources */,
+				A1A1979B282EAB0100ED36D0 /* AirportTableViewCell.xib in Resources */,
+				A1A197A3282F2C1700ED36D0 /* AirportDetailsViewController.xib in Resources */,
 				A10EF922282D9B1300764BB6 /* Assets.xcassets in Resources */,
+				A1A197C12831D45100ED36D0 /* LaunchScreen.storyboard in Resources */,
 				A10EF920282D9B1000764BB6 /* Main.storyboard in Resources */,
+				A1A197BF2831D40F00ED36D0 /* runway.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +343,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				A10EF91D282D9B1000764BB6 /* ViewController.swift in Sources */,
+				A1A197A7282FF97800ED36D0 /* StringConstants.swift in Sources */,
+				A1A197A5282FF7A800ED36D0 /* NetworkClientProvider.swift in Sources */,
 				A10EF919282D9B1000764BB6 /* AppDelegate.swift in Sources */,
+				A1A19799282EAAE600ED36D0 /* AirportTableViewCell.swift in Sources */,
 				A10EF91B282D9B1000764BB6 /* SceneDelegate.swift in Sources */,
+				A1A19797282EA7EC00ED36D0 /* AirportModel.swift in Sources */,
+				A1A197A1282F2C0400ED36D0 /* AirportDetailsViewController.swift in Sources */,
+				A1A197AF28318C9600ED36D0 /* ForecastViewModel.swift in Sources */,
+				A1A197AD2831796700ED36D0 /* DetailViewModel.swift in Sources */,
+				A1A197AB2831722A00ED36D0 /* UIColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,14 +395,6 @@
 				A10EF91F282D9B1000764BB6 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		A10EF923282D9B1300764BB6 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A10EF924282D9B1300764BB6 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

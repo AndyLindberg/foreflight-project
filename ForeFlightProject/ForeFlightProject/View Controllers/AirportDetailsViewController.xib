@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AirportDetailsViewController" customModule="ForeFlightProject" customModuleProvider="target">
+            <connections>
+                <outlet property="optionsSegmentControl" destination="JRF-On-B4D" id="P9g-lf-oEF"/>
+                <outlet property="tableView" destination="Vio-EQ-B1I" id="tuh-tn-toX"/>
+                <outlet property="view" destination="nUs-ny-k2u" id="KKy-MP-fcS"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="nUs-ny-k2u">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="JRF-On-B4D">
+                    <rect key="frame" x="133.5" y="54" width="147" height="32"/>
+                    <segments>
+                        <segment title="Details"/>
+                        <segment title="Forecast"/>
+                    </segments>
+                </segmentedControl>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Vio-EQ-B1I">
+                    <rect key="frame" x="0.0" y="85" width="414" height="777"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="lhT-S7-KTO"/>
+            <color key="backgroundColor" systemColor="systemYellowColor"/>
+            <accessibility key="accessibilityConfiguration" label="BSLocationForecastView">
+                <bool key="isElement" value="NO"/>
+            </accessibility>
+            <constraints>
+                <constraint firstItem="JRF-On-B4D" firstAttribute="top" secondItem="lhT-S7-KTO" secondAttribute="top" constant="10" id="PhT-Xh-01W"/>
+                <constraint firstItem="Vio-EQ-B1I" firstAttribute="top" secondItem="JRF-On-B4D" secondAttribute="bottom" id="Rqc-ZD-tZ8"/>
+                <constraint firstItem="Vio-EQ-B1I" firstAttribute="leading" secondItem="lhT-S7-KTO" secondAttribute="leading" id="WKs-Wn-fDR"/>
+                <constraint firstItem="lhT-S7-KTO" firstAttribute="trailing" secondItem="Vio-EQ-B1I" secondAttribute="trailing" id="dov-Nh-mP9"/>
+                <constraint firstItem="JRF-On-B4D" firstAttribute="centerX" secondItem="nUs-ny-k2u" secondAttribute="centerX" id="frw-RG-1Mp"/>
+                <constraint firstItem="lhT-S7-KTO" firstAttribute="bottom" secondItem="Vio-EQ-B1I" secondAttribute="bottom" id="gQB-0y-zHf"/>
+            </constraints>
+            <point key="canvasLocation" x="33.333333333333336" y="52.232142857142854"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
