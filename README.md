@@ -22,7 +22,8 @@ elements in the view update to represent
 ## Information
 
 - Time Spent: ~10-12 hours over the course of the weekend
-- Since we do not have an array of AirportModels to iteratre through for our Details table view, I created DetailViewModel and ForecastViewModel to provide a way to show the data in the table view
+- Since we do not have an array of AirportModels to iterate through for our Details table view, I created DetailViewModel and ForecastViewModel to provide a way to show the data in the table view
+- Given more time, I would have polished up the UI considerably. It's fairly basic as-is
 - I would have liked to have a custom table view cell with a MapView inside centered on the coordinates from the json response
 - I believe there is room for improvement with the ViewModels as some code is repeated. Given more time and documentation on the json response there could be a cleaner approach for these
 - To make the AirportModel I wanted to try a [new tool](https://app.quicktype.io/) I found. I don't think I will use it again as it had trouble creating the structs properly. It might work better for a more simple json response
