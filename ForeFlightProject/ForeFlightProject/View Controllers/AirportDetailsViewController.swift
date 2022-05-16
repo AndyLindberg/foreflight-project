@@ -74,6 +74,7 @@ class AirportDetailsViewController: UIViewController, UIScrollViewDelegate {
         refreshTimer = nil
     }
     
+    //TODO: Ideally our VCs would not be calling our NetworkManager directly, should be handled on a service layer object that would handle that operation on their behalf.
     @objc func refreshContent () {
         if let airportToRefresh = airport?.report?.conditions?.ident {
             NetworkManager.request(urlString: StringConstants.airportURL.replacingOccurrences(of: "{airportCode}", with: airportToRefresh)) { [weak self]

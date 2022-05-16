@@ -7,6 +7,7 @@
 
 import Foundation
 
+//TODO: Make this more generic for other API calls in the future
 final class NetworkManager {
     /// Executes the HTTP request and will attempt to decode the JSON
     /// response into a Codable object.
