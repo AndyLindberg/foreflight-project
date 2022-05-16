@@ -26,6 +26,8 @@ elements in the view update to represent
 - Given more time, I would have polished up the UI considerably. It's fairly basic as-is
 - I would have liked to have a custom table view cell with a MapView inside centered on the coordinates from the json response
 - I believe there is room for improvement with the ViewModels as some code is repeated. Given more time and documentation on the json response there could be a cleaner approach for these
+- The Network calls should be moved out of the View Controllers to allow better testing
+- The Network call can be made more generic if we wanted to use it for different API Calls
 - To make the AirportModel I wanted to try a [new tool](https://app.quicktype.io/) I found. I don't think I will use it again as it had trouble creating the structs properly. It might work better for a more simple json response
 - Given more time I would like to add tests for bad input, bad json response, etc.
 - There are no pods, please run the xcode project like normal
