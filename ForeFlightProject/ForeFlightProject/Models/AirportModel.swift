@@ -76,7 +76,7 @@ struct ConditionsVisibility: Decodable {
 struct Wind: Decodable {
     let speedKts, direction, from: Double?
     let variable: Bool?
-    let gustSpeedKts: Int?
+    let gustSpeedKts: Double?
 }
 
 // MARK: - ReportForecast
