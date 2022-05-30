@@ -7,8 +7,6 @@
 
 import Foundation
 
-
-
 // MARK: - AirportModel
 public struct AirportModel: Decodable {
     let report: Report?

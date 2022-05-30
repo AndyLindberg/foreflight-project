@@ -10,9 +10,8 @@ import UIKit
 
 class AirportTableViewCell: UITableViewCell {
 
-    
     @IBOutlet weak var airportIdentifier: UILabel!
-    
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -22,5 +21,4 @@ class AirportTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
         // Configure the view for the selected state
     }
-    
 }
