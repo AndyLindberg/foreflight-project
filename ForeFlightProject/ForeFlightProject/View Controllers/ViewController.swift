@@ -26,6 +26,7 @@ class ViewController: UIViewController {
             string: "Add New Airport",
             attributes: [NSAttributedString.Key.foregroundColor: UIColor.white]
         )
+        textField.textColor = .white
         //Check if user has added custom locations, if not we start with KPWM and KAUS
         if let airports = userDefaults.object(forKey: "myAirports") as? [String] {
             airportsArray = airports
