@@ -53,7 +53,9 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "AirportTableViewCell", for: indexPath) as! AirportTableViewCell
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "AirportTableViewCell", for: indexPath) as? AirportTableViewCell else {
+            return UITableViewCell()
+        }
         cell.airportIdentifier.text = airportsArray?[indexPath.row]
         
         if (indexPath.row % 2 != 0) {

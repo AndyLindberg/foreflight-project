@@ -21,7 +21,6 @@ struct DetailViewModel {
         let latCell: CellModel = .text(title: "Lat", value: String(model.lat ?? 9999))
         let lonCell: CellModel = .text(title: "Lon", value: String(model.lon ?? 9999))
         let coordinateSection: SectionModel = .init(title: "Coordinates", cells: [latCell, lonCell])
-
         
         let pressureHgCell: CellModel = .text(title: "Pressure(Hg)", value: String(model.pressureHg ?? 9999))
         let pressureHpaCell: CellModel = .text(title: "Pressure(Hpa)", value: String(model.pressureHpa ?? 9999))
@@ -80,7 +79,6 @@ struct DetailViewModel {
 
         self.title = "Conditions"
         self.sections = [generalInformationSection, coordinateSection, pressureSection, miscSection, visibilitySection, windSection] + cloudSections
-        
     }
 }
 
